@@ -27,4 +27,8 @@ public class AccountService {
         return accountRepository.findById(accountId)
                 .orElseThrow(() -> new AccountNotFoundException("Unable to find account with id " + accountId));
     }
+
+    public Account update(Account account) {
+        return accountRepository.save(account);
+    }
 }
