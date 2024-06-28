@@ -1,0 +1,22 @@
+package org.example.controller.dto;
+
+import java.util.List;
+
+public class AccountRequestDTO {
+    private String name;
+
+    private String email;
+    private List<BillRequestDTO> billS;
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public List<BillRequestDTO> getBillS() {
+        return billS;
+    }
+}
