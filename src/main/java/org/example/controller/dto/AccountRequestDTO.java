@@ -3,10 +3,16 @@ package org.example.controller.dto;
 import java.util.List;
 
 public class AccountRequestDTO {
-    private String name;
+    private final String name;
 
-    private String email;
-    private List<BillRequestDTO> bills;
+    private final String email;
+    private final List<BillRequestDTO> bills;
+
+    public AccountRequestDTO(String name, String email, List<BillRequestDTO> bills) {
+        this.name = name;
+        this.email = email;
+        this.bills = bills;
+    }
 
     public String getName() {
         return name;

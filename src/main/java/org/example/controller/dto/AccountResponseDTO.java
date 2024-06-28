@@ -6,10 +6,13 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class AccountResponseDTO {
-    private Long accountId;
-    private String name;
-    private String email;
-    private List<BillResponseDTO> bills;
+    private final Long accountId;
+    private final String
+            name;
+    private final String
+            email;
+    private final List<BillResponseDTO>
+            bills;
 
     public AccountResponseDTO(Account account) {
         accountId = account.getAccountId();
@@ -33,35 +36,19 @@ public class AccountResponseDTO {
         this.bills = bills;
     }
 
-    public Long getAccountId() {
-        return accountId;
-    }
-
-    public void setAccountId(final Long accountId) {
-        this.accountId = accountId;
-    }
-
     public String getName() {
         return name;
     }
 
-    public void setName(final String name) {
-        this.name = name;
+    public Long getAccountId() {
+        return accountId;
     }
 
     public String getEmail() {
         return email;
     }
 
-    public void setEmail(final String email) {
-        this.email = email;
-    }
-
     public List<BillResponseDTO> getBills() {
         return bills;
-    }
-
-    public void setBills(final List<BillResponseDTO> bills) {
-        this.bills = bills;
     }
 }
