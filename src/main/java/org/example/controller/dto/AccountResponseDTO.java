@@ -7,30 +7,30 @@ import java.util.stream.Collectors;
 
 public class AccountResponseDTO {
     private Long accountId;
-
     private String name;
-
     private String email;
-    private List<BillResponseDTO> billS;
-    public AccountResponseDTO(Account account){
+    private List<BillResponseDTO> bills;
+
+    public AccountResponseDTO(Account account) {
         accountId = account.getAccountId();
         name = account.getName();
         email = account.getEmail();
-        billS = account
+        bills = account
                 .getBills()
                 .stream()
                 .map(BillResponseDTO::new)
                 .collect(Collectors.toList());
 
     }
+
     public AccountResponseDTO(final Long accountId,
                               final String name,
                               final String email,
-                              final List<BillResponseDTO> billS) {
+                              final List<BillResponseDTO> bills) {
         this.accountId = accountId;
         this.name = name;
         this.email = email;
-        this.billS = billS;
+        this.bills = bills;
     }
 
     public Long getAccountId() {
@@ -57,11 +57,11 @@ public class AccountResponseDTO {
         this.email = email;
     }
 
-    public List<BillResponseDTO> getBillS() {
-        return billS;
+    public List<BillResponseDTO> getBills() {
+        return bills;
     }
 
-    public void setBillS(final List<BillResponseDTO> billS) {
-        this.billS = billS;
+    public void setBills(final List<BillResponseDTO> bills) {
+        this.bills = bills;
     }
 }

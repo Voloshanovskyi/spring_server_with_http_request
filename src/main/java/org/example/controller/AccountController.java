@@ -27,11 +27,10 @@ public class AccountController {
     public Long create(@RequestBody AccountRequestDTO accountRequestDTO) {
         return accountService.save(accountRequestDTO.getName(),
                 accountRequestDTO.getEmail(),
-                accountRequestDTO.getBillS()
+                accountRequestDTO.getBills()
                         .stream()
                         .map(billRequestDTO -> new Bill(billRequestDTO.getAmount(), billRequestDTO.getDefault()))
                         .collect(Collectors.toList())
         );
-
     }
 }

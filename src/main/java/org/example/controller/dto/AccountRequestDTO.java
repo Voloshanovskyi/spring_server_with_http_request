@@ -6,7 +6,7 @@ public class AccountRequestDTO {
     private String name;
 
     private String email;
-    private List<BillRequestDTO> billS;
+    private List<BillRequestDTO> bills;
 
     public String getName() {
         return name;
@@ -16,7 +16,7 @@ public class AccountRequestDTO {
         return email;
     }
 
-    public List<BillRequestDTO> getBillS() {
-        return billS;
+    public List<BillRequestDTO> getBills() {
+        return bills;
     }
 }
