@@ -5,7 +5,7 @@ import org.example.entity.Bill;
 import org.example.exeptions.NotDefaultBillException;
 
 public class AccountUtils {
-    public static Bill findDefoultBill(Account accountFrom) {
+    public static Bill findDefaultBill(Account accountFrom) {
         return accountFrom.getBills()
                 .stream()
                 .filter(Bill::getDefault)

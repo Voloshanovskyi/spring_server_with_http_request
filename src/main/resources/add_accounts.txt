@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Lori",
+        "email": "lori@gmail.com",
+        "bills": [
+            {
+                "amount": 20000,
+                "isDefault": false
+            },
+            {
+                "amount": 30000,
+                "isDefault": true
+            }
+        ]
+    },
+    {
+        "name": "Baxter",
+        "email": "baxter@gmail.com",
+        "bills": [
+            {
+                "amount": 30000,
+                "isDefault": false
+            },
+            {
+                "amount": 40000,
+                "isDefault": true
+            }
+        ]
+    },
+    {
+        "name": "Bobby",
+        "email": "bobbyy@gmail.com",
+        "bills": [
+            {
+                "amount": 40000,
+                "isDefault": false
+            },
+            {
+                "amount": 50000,
+                "isDefault": true
+            }
+        ]
+    },
+    {
+        "name": "Daddy",
+        "email": "daddy@gmail.com",
+        "bills": [
+            {
+                "amount": 60000,
+                "isDefault": false
+            },
+            {
+                "amount": 70070,
+                "isDefault": true
+            }
+        ]
+    }
+]

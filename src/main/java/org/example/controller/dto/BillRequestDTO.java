@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 public class BillRequestDTO {
     @JsonProperty("amount")
     private BigDecimal amount;
-@JsonProperty("isDefault")
+    @JsonProperty("isDefault")
     private Boolean isDefault;
 
     public BigDecimal getAmount() {
